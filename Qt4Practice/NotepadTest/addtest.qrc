@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>Images/テスト3.gif</file>
+        <file>Images/テスト4.tif</file>
+        <file>Images/testgif.gif</file>
+    </qresource>
+</RCC>

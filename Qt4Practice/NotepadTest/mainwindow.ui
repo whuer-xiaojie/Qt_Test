@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>315</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/new/prefix1/Images/テスト4.tif);</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>315</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="FileMenu">
+    <property name="title">
+     <string>  文件(&amp;F)    </string>
+    </property>
+    <addaction name="NewAction"/>
+    <addaction name="OpenAction"/>
+    <addaction name="SaveAction"/>
+   </widget>
+   <widget class="QMenu" name="EditMenu">
+    <property name="title">
+     <string>编辑(&amp;E)</string>
+    </property>
+    <addaction name="UndoAction"/>
+    <addaction name="CopyAction"/>
+    <addaction name="PasteAction"/>
+    <addaction name="CutAction"/>
+    <addaction name="SelectAllAction"/>
+    <addaction name="separator"/>
+    <addaction name="DataTimeAction"/>
+   </widget>
+   <widget class="QMenu" name="FormatMenu">
+    <property name="title">
+     <string>格式(O)</string>
+    </property>
+    <addaction name="TypeFontAction"/>
+    <addaction name="ColorAction"/>
+    <addaction name="separator"/>
+    <addaction name="aboutQtAction"/>
+    <addaction name="aboutWebAction"/>
+    <addaction name="aboutSoftAction"/>
+   </widget>
+   <addaction name="FileMenu"/>
+   <addaction name="EditMenu"/>
+   <addaction name="FormatMenu"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="separator"/>
+   <addaction name="NewAction"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="NewAction">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="addtest.qrc">
+     <normaloff>:/new/prefix1/Images/テスト3.gif</normaloff>:/new/prefix1/Images/テスト3.gif</iconset>
+   </property>
+   <property name="text">
+    <string>新建(&amp;N)       Ctrl+N</string>
+   </property>
+  </action>
+  <action name="OpenAction">
+   <property name="text">
+    <string>打开(O)       Ctrl +O</string>
+   </property>
+  </action>
+  <action name="SaveAction">
+   <property name="text">
+    <string>保存(S)        Ctrl +S</string>
+   </property>
+  </action>
+  <action name="UndoAction">
+   <property name="text">
+    <string>撤销(U) Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="CopyAction">
+   <property name="text">
+    <string>复制(C) Ctrl+C</string>
+   </property>
+  </action>
+  <action name="PasteAction">
+   <property name="text">
+    <string>粘贴(P) Ctrl+V</string>
+   </property>
+  </action>
+  <action name="CutAction">
+   <property name="text">
+    <string>剪贴(T) Ctrl+X</string>
+   </property>
+  </action>
+  <action name="SelectAllAction">
+   <property name="text">
+    <string>全选(A) Ctrl+A</string>
+   </property>
+  </action>
+  <action name="DataTimeAction">
+   <property name="text">
+    <string>时间/日期（D）</string>
+   </property>
+  </action>
+  <action name="TypeFontAction">
+   <property name="text">
+    <string>字体</string>
+   </property>
+  </action>
+  <action name="ColorAction">
+   <property name="text">
+    <string>颜色</string>
+   </property>
+  </action>
+  <action name="aboutQtAction">
+   <property name="text">
+    <string>关于（Qt）</string>
+   </property>
+  </action>
+  <action name="aboutWebAction">
+   <property name="text">
+    <string>关于官网</string>
+   </property>
+  </action>
+  <action name="aboutSoftAction">
+   <property name="text">
+    <string>关于软件</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="addtest.qrc"/>
+ </resources>
+ <connections/>
+</ui>

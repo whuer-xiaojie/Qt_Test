@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>MainForm.ui.qml</file>
+        <file>CoverFlow.qml</file>
+        <file>image.qrc</file>
+        <file>Dalegate.qml</file>
+    </qresource>
+</RCC>
